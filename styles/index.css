@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F1EB;
+}
+
+.navbar {
+    margin: 3vw 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.navbar a {
+    color: #6e6e6c;
+}
+
+.navbar a:hover {
+    color: #FFAD84;
+}
+
+.navbar .items {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.navbar .register {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.navbar .register .login {
+    border: 2px solid #88AB8E;
+    padding: .3vw 1vw;
+    border-radius: .5rem;
+    color: #88AB8E;
+    font-size: 1vw;
+}
+
+.navbar .register .login:hover {
+    background-color: #88AB8E;
+    border-radius: .5rem;
+    color: #F2F1EB;
+}
+
+.navbar .register .signup {
+    border: 2px solid #88AB8E;
+    padding: .3vw 1vw;
+    border-radius: .5rem;
+    color: #F2F1EB;
+    background-color: #88AB8E;
+    font-size: 1vw;
+}
+
+.navbar .register .signup:hover {
+    color: #88AB8E;
+    background-color: #F2F1EB;
+    font-size: 1vw;
+}
+
+.eye-catch {
+    width: 90%;
+    height: auto;
+    background-color: #88AB8E;
+    border-radius: .9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.eye-catch .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 30%;
+}
+
+.eye-catch .details h1 {
+    font-size: 4vw;
+    color: white;
+}
+
+.eye-catch .details h1 span {
+    text-decoration: underline solid #EEE7DA ;
+}
+
+.eye-catch .details p {
+    color: white;
+    font-weight: 400;
+    font-size: 1.4vw;
+}
+
+.eye-catch .details .btns {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 1vw 0;
+    gap: 1vw;
+}
+
+.eye-catch .details .btns .strok {
+    border: 2px solid #F2F1EB;
+    padding: .5vw 1.5vw;
+    border-radius: .5rem;
+    color: #F2F1EB;
+    font-size: 1.2vw;
+}
+
+.eye-catch .details .btns .strok:hover {
+    background-color: #F2F1EB;
+    color: #88AB8E;
+}
+
+.eye-catch .details .btns .fill {
+    background-color: #F2F1EB;
+    border: 2px solid #F2F1EB;
+    padding: .5vw 1.5vw;
+    border-radius: .5rem;
+    color: #88AB8E;
+    font-size: 1.2vw;
+}
+
+.eye-catch .details .btns .fill:hover {
+    color: #F2F1EB;
+    background-color: #88AB8E;
+}
+
+.eye-catch .person {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.eye-catch .person .circle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.eye-catch .person img {
+    width: 21vw;
+    z-index: 1;
+}
+
+.eye-catch .person .back-circle {
+    border-radius: 50%;
+    background-color: #EEE7DA;
+    height: 25vw;
+    width: 25vw;
+    position: absolute;
+    z-index: 0;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 1vw 0;
+    height: 3vw;
+}
+
+.clients img {
+    height: 100%;
+    opacity: 40%;
+}
+
+.job-post {
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.job-post img {
+    object-fit: contain;
+    z-index: 0;
+    position: absolute;
+    color: #88AB8E;
+    width: 100%;
+}
+
+.job-post h1 {
+    font-size: 5vw;
+    margin: 1vw 0;
+    font-weight: 400;
+}
+
+.job-post h1 span {
+    color: #88AB8E;
+}
+
+.job-post p {
+    color: rgb(121, 129, 148);
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 0 5rem;
+}
+
+.job-post a {
+    padding: .8vw 1.2vw;
+    border-radius: .5rem;
+    background-color: #88AB8E;
+    color: #F2F1EB;
+    font-size: 1.2vw;
+    margin: 1vw 0;
+    border: 2px solid #88AB8E;
+    z-index: 12;
+}
+
+.job-post a:hover {
+    background-color: #F2F1EB;
+    color: #88AB8E;
+}
+
+.video {
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+.video .details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 30%;
+    z-index: 1;
+}
+
+.video .details h2 {
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.video .details h2 span {
+    color: #88AB8E;
+}
+
+.video .details p {
+    font-size: 1.2vw;
+    margin: 1vw 0;
+}
+
+.video .details a {
+    padding: 1vw 2vw;
+    background-color: #F2F1EB;
+    border: 2px solid #88AB8E;
+    border-radius: .5rem;
+    color: #88AB8E;
+}
+
+.video .details a:hover {
+    background-color: #88AB8E;
+    color: #F2F1EB;
+}
+
+.video .container {
+    height: 90%;
+    width: 50%;
+    background-image: url('../imgs/video-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: .5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.video .container a {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.video .container .icon {
+	border-top: 2.5vw solid transparent;
+	border-left: 5vw solid #F2F1EB;
+	border-bottom: 2.5vw solid transparent;
+    position: absolute;
+    width: 2.5vw;
+    height: 5vw;
+    z-index: 4;
+}
+
+.video .container .icon:hover {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.how {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+}
+
+.how h1 {
+    font-size: 2vw;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+.how h1 span {
+    color: #88AB8E;
+}
+
+.how p {
+    text-align: center;
+    width: 50%;
+    font-size: 1.2vw;
+}
+
+.how .line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.how .line img {
+    object-fit: cover;
+    position: absolute;
+    width: 80%;
+    z-index: -999;
+}
+
+.how .line .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    position: relative;
+    top: 3vw;
+}
+
+.how .line .down {
+    top: 6vw;
+}
+
+.how .line .card .circel {
+    background-color: #88ab8e;
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 2vw 0;
+}
+
+.how .line .card .circel h1 {
+    font-size: 2vw;
+    color: #EEE7DA;
+    font-weight: 500;
+}
+
+.how .line .card h2 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    margin-bottom: 1vw;
+}
+
+.how .line .card p {
+    font-size: 1.1vw;
+    color: #6e6e6c;
+}
+
+.find {
+    height: 100vh;
+    background-color: #88AB8E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6vw;
+}
+
+.find img {
+    border-radius: .5rem;
+}
+
+.find .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 40%;
+}
+
+.find .details h1 {
+    font-size: 3vw;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.find .details p {
+    margin: 1rem 0;
+    font-size: 1.3vw;
+}
+
+.find .details ul {
+    list-style: outside;
+}
+
+.find .details ul li {
+    font-size: 1.1vw;
+}
+
+.find .details a {
+    margin: 3vw 0;
+    color: #F2F1EB;
+    border-radius: .5rem;
+    padding: 1vw 2vw;
+    border: 2px solid #F2F1EB;
+}
+
+.find .details a:hover {
+    color: #88AB8E;
+    background-color: #F2F1EB;
+}
