@@ -24,12 +24,115 @@ body {
     background-color: #F2F1EB;
 }
 
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2vw;
+    width: 40%;
+    height: 100vh;
+    background-color: #88AB8E;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 4vw;
+    display: none;
+}
+
+.sidebar a {
+    color: #F2F1EB;
+    font-size: 2vw;
+}
+
+.sidebar a:hover {
+    color: #FFAD84;
+}
+
+.sidebar img {
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+}
+
+.sidebar img:hover {
+    cursor: pointer;
+}
+
+.sidebar .register {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.sidebar .register .login {
+    border: 2px solid #EEE7DA;
+    padding: .3vw 1vw;
+    border-radius: .5rem;
+    color: #88AB8E;
+    background-color: #EEE7DA;
+    font-size: 1vw;
+}
+
+.sidebar .register .login:hover {
+    border-color:  #EEE7DA;
+    background-color: #88AB8E;
+    border-radius: .5rem;
+    color: #F2F1EB;
+}
+
+.sidebar .register .signup {
+    border: 2px solid #EEE7DA;
+    padding: .3vw 1vw;
+    border-radius: .5rem;
+    color: #EEE7DA;
+    background-color: #88AB8E;
+    font-size: 1vw;
+}
+
+.sidebar .register .signup:hover {
+    color: #88AB8E;
+    background-color: #EEE7DA;
+    font-size: 1vw;
+}
+
+/* mobile responsive */
+
+@media(max-width: 790px){
+    .hideonmobile{
+        display: none !important;
+    }
+    .menu {
+        display: inline-block;
+    }
+}
+
+@media(min-width: 790px){
+    .sidebar{
+        display: none;
+    }
+    .hideonmobile{
+        display: flex !important;
+    }
+    .menu {
+        display: none;
+    }
+}
+
 .navbar {
     margin: 3vw 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
+}
+
+.navbar img {
+    width: 5vw;
 }
 
 .navbar a {
@@ -79,6 +182,10 @@ body {
     color: #88AB8E;
     background-color: #F2F1EB;
     font-size: 1vw;
+}
+
+.navbar .menu {
+    width: 3vw;
 }
 
 .eye-catch {
@@ -192,7 +299,6 @@ body {
 
 .clients img {
     height: 100%;
-    opacity: 40%;
 }
 
 .job-post {
@@ -426,6 +532,7 @@ body {
 
 .find img {
     border-radius: .5rem;
+    width: 30vw;
 }
 
 .find .details {

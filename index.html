@@ -9,13 +9,26 @@
 <body>
     <div class="navbar">
         <a href="#" class="logo"><img src="./imgs/logo.png" alt="logo"></a>
-        <div class="items">
+        <div class="items hideonmobile">
             <a href="#">Home</a>
             <a href="#">Jobseekers</a>
             <a href="#">Employers</a>
             <a href="#">Oportunity Zone</a>
             <a href="#">Contact Us</a>
         </div>
+        <div class="register hideonmobile">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="signup"><span>Sign Up</span></a>
+        </div>
+        <img src="./imgs/navbar.png" alt="menu" class="menu" onclick="showMenu()">
+    </div>
+    <div class="sidebar">
+        <img src="./imgs/close.png" alt="close" onclick="closeMenu()">
+        <a href="#">Home</a>
+        <a href="#">Jobseekers</a>
+        <a href="#">Employers</a>
+        <a href="#">Oportunity Zone</a>
+        <a href="#">Contact Us</a>
         <div class="register">
             <a href="#" class="login">Login</a>
             <a href="#" class="signup"><span>Sign Up</span></a>
@@ -39,7 +52,7 @@
     </div>
     <div class="clients">
         <img src="./imgs/microsoft.png" alt="microsoft">
-        <img src="./imgs/intel.png" alt="microsoft">
+        <img src="./imgs/nike.png" alt="microsoft">
         <img src="./imgs/linkedin.png" alt="microsoft">
         <img src="./imgs/netflix.png" alt="microsoft">
         <img src="./imgs/airbnb.png" alt="microsoft">
@@ -104,5 +117,6 @@
             <a href="#">Get Started Now</a>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
